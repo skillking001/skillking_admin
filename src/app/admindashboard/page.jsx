@@ -126,7 +126,7 @@ const Page = () => {
         cancelTickets: resDashboard.data.totalCancelledTickets || 0,
         totalPoints: resPoints.data.totalPointsToday || 0,
         netPoints: resPoints.data.netAmount || 0,
-        pendingClaims: resDashboard.data.pendingClaimTickets || 0,
+        pendingClaims: resDashboard.data.pendingClaimAmount || 0,
         winningPoints: resPoints.data.winningAmount || 0,
         shopPoints: resPoints.data.commissionAmount || 0,
         adminAmount: resPoints.data.adminAmount || 0
