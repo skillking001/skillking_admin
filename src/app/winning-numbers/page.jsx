@@ -64,16 +64,17 @@ const fetchAllPendingClaims = async () => {
 
     admins.forEach((admin) => {
       admin.pendingClaimableTickets.forEach((ticket, index) => {
-        flattened.push({
-          drawDate: ticket.drawDate,
-          drawTimes: ticket.drawTimes || [],
-          shopName: admin.shopName,
-          quantity: ticket.matches.reduce(
-            (sum, m) => sum + m.quantity,
-            0
-          ),
-          ticketNumbers: ticket.matches.map((m) => m.number),
-        });
+flattened.push({
+  ticketId: ticket.ticketId,   // ✅ ADD THIS
+  drawDate: ticket.drawDate,
+  drawTimes: ticket.drawTimes || [],
+  shopName: admin.shopName,
+  quantity: ticket.matches.reduce(
+    (sum, m) => sum + m.quantity,
+    0
+  ),
+  ticketNumbers: ticket.matches.map((m) => m.number),
+});
       });
     });
 
@@ -310,6 +311,9 @@ const fetchAllPendingClaims = async () => {
             <thead>
               <tr className="bg-slate-800/80 border-b border-slate-700">
                 <th className="py-4 px-6 text-left text-slate-300 font-semibold text-sm uppercase tracking-wider">
+                  Ticket ID
+                </th>
+                <th className="py-4 px-6 text-left text-slate-300 font-semibold text-sm uppercase tracking-wider">
                   Draw Date
                 </th>
                 <th className="py-4 px-6 text-left text-slate-300 font-semibold text-sm uppercase tracking-wider">
@@ -340,6 +344,9 @@ const fetchAllPendingClaims = async () => {
                     key={index}
                     className="hover:bg-slate-800/50 transition-all duration-200"
                   >
+                    <td className="py-4 px-6 text-cyan-400 font-bold">
+                          #{item.ticketId}
+                        </td>
                     <td className="py-4 px-6 text-slate-200">{item.drawDate}</td>
 
                     <td className="py-4 px-6 text-slate-300">

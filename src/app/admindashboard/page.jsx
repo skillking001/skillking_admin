@@ -266,7 +266,7 @@ const Page = () => {
                 <div className='absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-50'></div>
                 <div className='flex items-center justify-between text-white'>
                   <div>
-                    <h2 className='text-lg font-bold opacity-90 mb-1'>Total Points</h2>
+                    <h2 className='text-lg font-bold opacity-90 mb-1'>Total Amount</h2>
                     <h1 className='text-2xl font-bold'>{stats.totalPoints}</h1>
                   </div>
                   <div className='bg-white/20 p-2 rounded-lg'>
@@ -283,7 +283,7 @@ const Page = () => {
                 <div className='absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-50'></div>
                 <div className='flex items-center justify-between text-white'>
                   <div>
-                    <h2 className='text-lg font-bold opacity-90 mb-1'>Net Points</h2>
+                    <h2 className='text-lg font-bold opacity-90 mb-1'>Net Amount</h2>
                     <h1 className='text-2xl font-bold'>{stats.netPoints}</h1>
                   </div>
                   <div className='bg-white/20 p-2 rounded-lg'>
@@ -300,7 +300,7 @@ const Page = () => {
                 <div className='absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-50'></div>
                 <div className='flex items-center justify-between text-white'>
                   <div>
-                    <h2 className='text-lg font-bold opacity-90 mb-1'>Winning Points</h2>
+                    <h2 className='text-lg font-bold opacity-90 mb-1'>Winning Amount</h2>
                     <h1 className='text-2xl font-bold'>{stats.winningPoints}</h1>
                   </div>
                   <div className='bg-white/20 p-2 rounded-lg'>
@@ -321,7 +321,7 @@ const Page = () => {
                 <div className='absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-50'></div>
                 <div className='flex items-center justify-between text-white'>
                   <div>
-                    <h2 className='text-lg font-bold opacity-90 mb-1'>Shop Points</h2>
+                    <h2 className='text-lg font-bold opacity-90 mb-1'>Shop Amount</h2>
                     <h1 className='text-2xl font-bold'>{stats.shopPoints}</h1>
                   </div>
                   <div className='bg-white/20 p-2 rounded-lg'>
